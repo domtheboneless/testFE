@@ -1,0 +1,54 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+:root{
+    --blue: rgba(43, 80, 176, 1);
+    --hardblue: rgba(26, 49, 107, 1);
+    --green: rgba(171, 232, 220, 1);
+    --black: rgba(17, 35, 64, 1);
+    --cwhite: rgba(230, 236, 249, 1);
+    --grey: rgba(109, 119, 145, 1);
+}
+
+.c-textblue {
+    color: var(--blue) !important;
+}
+
+.c-texthblue {
+    color: var(--hardblue) !important;
+}
+
+.c-textgrey {
+    color: var(--grey) !important;
+}
+
+
+.c-textblack{
+    color: var(--black) !important;
+}
+
+.c-green{
+    color: var(--green) !important;
+}
+
+.c-whitepanel{
+    color: var(--cwhite) !important;
+}
+
+.c-bg-textblue {
+    background-color:  var(--blue) !important;
+}
+
+.c-bg-textblack{
+    background-color:  var(--black) !important;
+}
+
+.c-bg-green{
+    background-color:  var(--green) !important;
+}
+
+.c-bg-whitepanel{
+    background-color:  var(--cwhite) !important;
+}
