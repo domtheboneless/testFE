@@ -57,7 +57,7 @@
           {
             title: 'Welfare Guru',
             description: "è un professionista capace di affiancare le aziende in tutte le fase propredeutiche all'attivazione di un piano welfare. Sia tu abbia già un sistema premiale basato su premi di risultato o incentivi diversia, sia che per te sia la prima esperienza il Welfare Guru saprà consigliarti la migliore soluzione in grado di ottimizzare la leva fiscale e incentivare i dipendenti soddisfacendo i loro bisogno personali e familiari.",
-            backgroundColor: 'blueviolet',
+            backgroundColor: '#283B6C',
             image: '../img/Guru_car.png'
           },
           {
@@ -69,7 +69,7 @@
           {
             title: 'Servizi originali ed esclusivi',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            backgroundColor: '#716ACA',
+            backgroundColor: '#426BD1',
             image: '../img/Servizi_Img 1@2x.png'
           }
           
@@ -267,5 +267,46 @@
 }
 
 
-@media (min-width: 651px) and (max-width: 991px) {}
+@media (min-width: 651px) and (max-width: 991px) {
+
+
+  
+  .car-head-text{
+        min-height: 90px;
+    }
+
+    .ccarousel {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .carousel-text,
+    .carousel-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .moreExt {
+        display: flex;
+    }
+
+    .car-img {
+        width: 300px; 
+        height: 300px; 
+        object-fit: scale-down; 
+    }
+
+    .carousel-text>div>p {
+        display: none;
+    }
+
+    .slider{
+        max-width: 430px;
+    }
+
+    .more{
+        justify-content: center;
+    }
+}
 </style>
