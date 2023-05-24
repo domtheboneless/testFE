@@ -10,6 +10,7 @@
     --black: rgba(17, 35, 64, 1);
     --cwhite: rgba(230, 236, 249, 1);
     --grey: rgba(109, 119, 145, 1);
+    --lgrey: rgba(125, 135, 151, 1);
 }
 
 .c-textblue {
@@ -24,6 +25,9 @@
     color: var(--grey) !important;
 }
 
+.c-textlgrey {
+    color: var(--lgrey) !important;
+}
 
 .c-textblack{
     color: var(--black) !important;

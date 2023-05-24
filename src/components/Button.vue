@@ -27,7 +27,6 @@ export default {
     },
     created() {
         this.colorOninit = this.color
-        console.log(this.colorOninit)
     }
 }
 </script>
@@ -35,7 +34,7 @@ export default {
 
 <style scoped>
 .c-btn {
-    padding: 10px 20px;
+    padding: 0.5rem 3rem;
     font-size: 16px;
     display: flex;
     align-items: center;

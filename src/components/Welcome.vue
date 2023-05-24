@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <Pricer style="margin-top: 10px;" title="Piano GO!" euro="12,50" :benefits="welcomePrice"></Pricer>
+                    <Pricer style="margin-top: 10px;" title="Piano GO!" euro="12,50" :benefits="welcomePrice" buttonTitle="Attiva Piano GO!"></Pricer>
                     <div class="mt-4">
                         <p class="text-center text-white">Cerchi un piano su misura per la tua azienda? <br>
                             <u>Scopri il Piano PRO</u>
@@ -45,43 +45,7 @@
 
                 </div>
                 <!-- CAROSELLO   -->
-                <div class="c-container">
-                        <div class="easywrap justify-content-center">
-                            <div class="ccarousel h-50 align-self-center d-flex">
-                                <div class="m-4 carousel-text">
-                                    <div class="head">
-                                        <h1 class="fw-bold text-white car-head-text">Welfare Guru
-                                        </h1>
-                                        <p class="text-white car-text">è un professionista capace di affiancare le aziende in tutte
-                                            le fase propredeutiche all'attivazione di un piano welfare. Sia tu abbia già un
-                                            sistema premiale basato su premi di risultato o incentivi diversia, sia che per
-                                            te sia la prima esperienza il Welfare Guru saprà consigliarti la migliore
-                                            soluzione in grado di ottimizzare la leva fiscale e incentivare i dipendenti
-                                            soddisfacendo i loro bisogno personali e familiari.</p>
-                                        <p class="text-white more"> <svg class="more-arrow"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                                <path
-                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-                                            </svg> SCOPRI DI PIù</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-img">
-                                    <img class="car-img" src="../assets/Guru_car.png" alt="">
-                                </div>
-                                <div class="w-100 moreExt">
-                                    <p class="text-white more d-flex justify-content-center"> <svg class="more-arrow"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                                <path
-                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-                                            </svg> SCOPRI DI PIù</p>
-                                </div>
-                            </div>
-                        </div>
-
-                </div>
-
+                    <Carousel></Carousel>
             </div>
 
         </div>
@@ -120,36 +84,191 @@
                     <h3 class="text-center c-textgrey text-24">Te lo diciamo noi se non lo sai</h3>
                 </div>
                 <div class="container-card d-flex align-items-baseline">
+                    <HorizCard title="Cos’è il Welfare Aziendale?" desc="Tutti ne parlano ma pochi conoscono il suo potenziale" img="/img/ManoWelfare.png" buttonBool="true" buttonText="Scopri di più" link=""></HorizCard>
+                    <HorizCard title="Come posso attrarre?" desc="Fidelizza e attrai nuovi talenti con un piano welfare mirato" img="/img/Attrarretalenti.png" buttonBool="true" buttonText="Scopri di più" link=""></HorizCard>
+                    <HorizCard title="Normative e vantaggi fiscali" desc="Risparmiare è facile grazie al tuo nuovo piano welfare" img="/img/Risparmiowelfare.png" buttonBool="true" buttonText="Scopri di più" link=""></HorizCard>
+                    <HorizCard title="Storie attrattive" desc="Ascolta le testimonianze di chi ha ha migliorato il proprio stile di vita" img="/img/SuccessoWelfare.png" buttonBool="true" buttonText="Scopri di più" link=""></HorizCard>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <HorizCard title="Welfare Guru" desc="per un piano di welfare aziendale personalizzato" img="/img/Guru_Male.png"></HorizCard>
-                    <HorizCard title="Gestione del piano" desc="welfare e dei fornitori di servizi a livello locale" img="/img/Piano_Fem.png"></HorizCard>
-                    <HorizCard title="Servizi welfare" desc="in ambito flexible benefit & employee caring" img="/img/Servizi.png"></HorizCard>
-                    <HorizCard title="Piattaforma Welfare " desc="accessibile da qualunque tipo di dispositivo" img="/img/Piattaforma_Male.png"></HorizCard>
+    <section class="banner">
+        <div class="c-container">
+            <div class="easywrap justify-content-center align-items-center">
+                <div class="w-75">
+                    <h4 class="text-white text-center">Sfrutta al meglio il tuo potenziale e fai crescere </h4>
+                    <h1 class="text-white fw-bold text-center">il benessere dei tuoi collaboratori</h1>
+                    <p class="text-white text-center text-18  mb-0" style="font-weight: 200;">Attiva subito un <b style="font-weight: 800;">Piano Go</b>  oppure richiedi un preventivo gratuito per attivare un <b style="font-weight: 800;">Piano Pro</b>.</p>
+                    <p class="text-white text-center text-18  mt-0" style="font-weight: 200;">l nostro Welfare guru è pronto a consigliarti la migliore soluzione in base alle tue esigenze.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="plans">
+        <div class="c-container">
+            <div class="easywrap justify-content-center align-items-center">
+                <div class="w-75">
+                    <h1 class="text-center c-textblack fw-bolder text-48">Attiva il tuo piano</h1>
+                    <h1 class="text-center c-textblack fw-bolder text-48">Go oppure Pro</h1>
+                    <p class="mb-0 text-center c-textgrey text-24">Scegli se attiavre subito il Piano Go oppure richiedere </p>
+                    <p class="mb-0 text-center c-textgrey text-24">un preventivo per il Piano Pro al nostro consulente</p>
+
+                    <div class="pricer">
+                        <Pricer class="singlepricer" style="margin-top: 10px;" title="Piano GO!" euro="12,50" :benefits="welcomePrice" buttonTitle="Attiva Piano GO!"></Pricer>
+                        <Pricer style="margin-top: 10px;" title="Piano PRO" euro="22,80" :benefits="proPlan" buttonTitle="Calcola preventivo" color="rgba(226, 225, 244, 1)"></Pricer>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-group">
+        <div class="c-container">
+            <div class="easywrap d-flex justify-content-center align-items-center">
+                <div class="groupcard d-flex">
+                    <div class="leftgroupc d-flex justify-content-center align-items-center">
+                        <img src="../assets/Omninext_Icon@2x.png" alt="omninex logo" class="img-fluid" width="50%">
+                    </div>
+                    <div class="rightgroupc">
+                        <h1 class="c-textblue text-48 fw-bold">Facciamo parte</h1>
+                        <h1 class="c-textblue text-48 fw-bold">di un grande gruppo!</h1>
+                        <p class="text-18 c-textlgrey">Il Gruppo Omninext è costituito da aziende altamente specializzate interconnesse tra loro, che permettono di ricoprire diversi settori industriali per necessità di Business personalizzate.</p>
+                        <p class="c-textblue more text-16"> <svg class="more-arrow fblue"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 448 512">
+                                                <path
+                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                            </svg> SCOPRI DI PIù</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="qa">
+        <div class="c-container">
+            <div class="easywrap d-flex justify-content-center align-items-center">
+                <h1 class="text-center c-textblue">Domande frequenti</h1>
+                <div class="w-75">
+                    <Accordion></Accordion>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="c-container">
+            <div class="easywrap d-flex justify-content-center align-items-center">
+                <div class="newsleft">
+                    <h2 class="text-white">Resta aggiornato</h2>
+                    <p class="text-white">Iscriviti alla newsletter per ricevere aggiornamenti sulle nuove offerte e partener MySarma</p>
+                </div>
+                <div class="newsright">
+                        <p class="text-white">Il tuo indirizzo mail</p>
+                        <div class="d-flex">
+                            <div class="w-50">
+                                <form action="submit">
+                                    <input type="text" name="email" id="" placeholder="@" class="emailinput">             
+                                </form>
+                            </div>
+                            <div class="w-25">
+                                <Button title="Invia" color="white"></Button>
+                            </div>
+                        </div>
 
                 </div>
             </div>
         </div>
-
-
     </section>
+
+    <footer class="footer">
+        <div class="c-container">
+            <div class="easywrap d-flex">
+                <div class="footerleft d-flex mb-4">
+                    <div class="w-25 flogo">
+                        <img class="footerlogo img-fluid" src="../assets/Mysarma_Logo_W@2x.png" alt="logomysarma">
+                        <img class="footerlogoit img-fluid" src="../assets/ita.png" alt="">
+                        <p class="text-white text-14">Il welfare aziendale tutto italiano a portata di PMI.</p>
+                    </div>
+
+                    <div class="w-25 footerSection">
+                        <p class="text-white text-16">Chi siamo</p>
+                        <p class="c-textgrey mb-0 mt-0 text-14">Vision & Mission</p>
+                        <p class="c-textgrey mb-0 mt-0 text-14">Il gruppo Omninext</p>
+                        <p class="c-textgrey mb-0 mt-0 text-14">Contattaci</p>
+                    </div>
+
+                    <div class="w-25 footerSection">
+                        <p class="text-white text-16">Soluzioni welfare</p>
+                        <p class="c-textgrey mb-0 mt-0 text-14">Premio di risultato</p>
+                        <p class="c-textgrey mb-0 mt-0 text-14">Il gruppo Omninext</p>
+                        <p class="c-textgrey mb-0 mt-0 text-14">Performance Management</p>
+                    </div>
+
+                    <div class="w-25 footerSection">
+                        <p class="text-white text-16">Seguici su</p>
+                        <p class="c-textgrey mb-0 mt-0 text-14">Linkedin</p>
+                    </div>
+
+                    <div class="w-25 footerSection planMobile">
+                        <div class="w-100">
+                            <p class="mt-0 mb-0">Piano GO!</p>
+                            <p class="mt-0 mb-0">Piano PRO</p>
+                            <p class="c-textgrey mt-4">Diventa partner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerright mb-4">
+                        <div class="w-100 plansfooter">
+                            <p class="mt-0 mb-0">Piano GO!</p>
+                            <p class="mt-0 mb-0">Piano PRO</p>
+                        </div>
+                        <div class="w-100 pt-4 partner">
+                            <p class="c-textgrey ">Diventa partner</p>
+                        </div>
+                </div>
+                <div class="copyright w-100 mt-4">
+                    <div class="d-flex mt-4">
+                        <div class="w-50">
+                            <p class="c-textgrey text-14">Copyright © MySarma srl - Tutti i diritti riservati</p>
+                        </div>
+                        <div class="w-50 d-flex justify-content-end">
+                            <p class="c-textgrey text-14">Privacy e Cookie Policy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </template>
 
 
 <script>
 import Pricer from './Pricer.vue'
 import HorizCard from './HorizCard.vue';
+import Accordion from './Accordion.vue'
+import Button from './Button.vue'
+import Carousel from './Carousel.vue'
 
 export default {
     data() {
         return {
-            welcomePrice: ["Utenti illimitati", "Piattaforma MySarma", "Gestione del contratto online", "MySarma Welfare Card (fino a 258€)", "Importi personalizzabili online", "Sconti e Coupon"]
+            welcomePrice: ["Utenti illimitati", "Piattaforma MySarma", "Gestione del contratto online", "MySarma Welfare Card (fino a 258€)", "Importi personalizzabili online", "Sconti e Coupon"],
+            proPlan: ["Utenti illimitati", "Welfare Guru","Piattaforma MySarma", "Gestione del contratto online", "Credito Welfare (illimitato)", "Importi personalizzabili online", "Gestione Scadenziata degli importi", "Gestione Scadenziata degli importi", "Flexible Benefit", "Sconti e Coupon"]
         }
     }
     ,
     components: {
         Pricer,
-        HorizCard
-
+        HorizCard,
+        Accordion,
+        Button,
+        Carousel
     }
 }
 </script>
@@ -268,9 +387,16 @@ export default {
 }
 
 .more-arrow {
-    fill: white;
     width: 3%;
     margin-right: 15px;
+}
+
+.fblue{
+    fill: #2B50B0;
+}
+
+.fwhite{
+    fill: white;
 }
 
 .carousel-img {
@@ -309,11 +435,155 @@ export default {
     display: none;
 }
 .text-72{
-    font-size: clamp(2.5rem, 4.5rem, 4.5rem) !important;
+    font-size: clamp(2.5rem, 4.5vw, 4.5rem) !important;
+}
+.text-48{
+    font-size: clamp(2rem, 3vw, 3rem) !important;
+}
+.text-24{
+    font-size: clamp(1rem, 1.5vw, 1.5rem) !important;
 }
 
-.text-24{
-    font-size: clamp(1rem, 1.5rem, 1.5rem) !important;
+.text-18{
+    font-size: clamp(.5rem, 1.12vw, 1.12rem) !important;
+}
+
+.text-16{
+    font-size: clamp(1rem, 1vw, 1rem) !important;
+}
+
+.text-14{
+    font-size: clamp(.5rem, .8vw, .8rem) !important;
+}
+.banner{
+    height: 48vh;
+    background-image: url("../assets/PatternBenessere.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.plans{
+    height: fit-content;
+    background-color: white;;
+    padding-top: 3rem;
+}
+
+.pricer{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.singlepricer{
+    margin-bottom: 1rem;
+}
+
+
+.banner-group{
+    height: 80vh;
+    background-color: white;
+}
+
+.groupcard{
+    flex-wrap: wrap;
+    width: 80%;
+    border: 1px solid #2B50B0;
+    border-radius: 36px;
+    padding: 2rem;
+}
+
+.leftgroupc{
+    width: 40%;
+}
+
+.rightgroupc{
+    width: 60%;
+}
+
+.qa{
+    height: 100vh;
+}
+
+.qa>.c-container>.easywrap{
+    height: 60% !important;
+
+}
+
+.newsletter{
+    height: 48vh;
+    background-image: url("../assets/Newsletter_Back@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.newsleft{
+    width: 50%;
+}
+
+.newsleft>p{
+    width: 55%;
+}
+
+.newsright{
+    width: 50%;
+}
+
+.newsright>.d-flex{
+    gap: 10%;
+    align-items: center;
+}
+
+.emailinput{
+    width: 350px;
+    border-radius: 10px;
+    background-color: #F8FAFC;
+    padding: 12px;
+}
+
+.footer{
+        background-color: rgba(18, 27, 48, 1);
+        padding-top: 5rem;
+ }
+
+ .footerlogo{
+    width: 50%;
+ }
+
+ .flogo{
+    margin-right: 6rem;
+ }
+ .footerlogoit{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 55%;
+ }
+
+.footerleft{
+    width: 70%;
+}
+
+.footerright{
+    width: 30%;
+    border-left: 1px solid rgba(90, 90, 90, 1);
+    padding-left: 3rem;
+}
+
+.plansfooter{
+    display: flex;
+    flex-direction: column;
+}
+
+.planMobile{
+    display: none;
+}
+
+.plansfooter>p{
+    color: rgba(169, 165, 223, 1);
+}
+
+.copyright{
+    border-top: 1px solid rgba(90, 90, 90, 1);
 }
 @media screen and (max-width: 650px) {
     .support-offer {
@@ -384,10 +654,116 @@ export default {
         margin-top: 350px;
     }
 
+    .banner{
+        height: 70vh;
+    }
+
+    .banner>.c-container>.easywrap>div>h1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .banner-group{
+        height: 100vh;
+    }
+
+    .leftgroupc{
+        width: 100%;
+    }
+
+    .rightgroupc{
+        width: 100%;
+    }
+    .rightgroupc>p:first-of-type{
+        display: none;
+    }
+
+    .rightgroupc>h1:first-of-type{
+        margin-top: 3rem;
+    }
+
+    .rightgroupc>h1:nth-of-type(2){
+        margin-bottom: 3rem;
+    }
+
+    .qa{
+        height: auto;
+    }
+    .qa>.c-container>.easywrap{
+    height: 100% !important;
+    }
+
+    .newsleft{
+        width: 100%;
+    }
+
+    .newsleft>p{
+        width: 100%;
+    }
+
+    .newsright, .newsright>.d-flex>.w-50, .newsright>.d-flex>.w-25 {
+        width: 100% !important;
+    }
+    .newsright>.d-flex{
+        flex-wrap: wrap;
+    }
+    .newsright>.d-flex>.w-25{
+       display: flex;
+       justify-content: end;
+    }
+
+    .emailinput{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .footerleft{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footerright{
+        width: 100%;
+    }
+
+    .flogo{
+        width: 100% !important;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerSection{
+        margin-top: 1rem;   
+        width: 50% !important;
+    }
+
+    .planMobile{
+        display: flex;
+    }
+
+    .planMobile>div>p{
+    color: rgba(169, 165, 223, 1);
+    }
+
+    .plansfooter, .partner{
+        display: none;
+    }
 }
 
 
 @media (min-width: 651px) and (max-width: 991px) {
+
+    .footerleft{
+        width: 100%;
+    }
+
+    .footerright{
+        width: 100%;
+    }
     .titleAppExternal {
         display: block;
     }
@@ -417,5 +793,34 @@ export default {
     display: none;
     }
 
+    .banner{
+        height: 70vh;
+    }
+    .banner>.c-container>.easywrap>div>h1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
+    .banner-group{
+        height: 100vh;
+    }
+    .leftgroupc{
+        width: 100%;
+    }
+
+    .rightgroupc{
+        width: 100%;
+    }
+
+    .rightgroupc>p:first-of-type{
+        display: none;
+    }
+
+    .rightgroupc>h1:first-of-type{
+        margin-top: 3rem;
+    }
+
+    .rightgroupc>h1:nth-of-type(2){
+        margin-bottom: 3rem;
+    }
 }</style>

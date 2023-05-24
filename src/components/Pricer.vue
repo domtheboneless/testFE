@@ -1,6 +1,6 @@
 
 <template>
-    <div class="price-container c-bg-whitepanel">
+    <div class="price-container c-bg-whitepanel" :style="color">
         <h3 class="c-textblue text-center mb-0"><b>{{title}}</b></h3>
         <p class="c-textblue text-center">a partire da</p>
         <div class="pricebox">
@@ -27,7 +27,7 @@
             </ul>
 
         <div class="mt-4 d-flex justify-content-center">
-            <Button title="Attiva Piano GO!" color="white"></Button>
+            <Button :title="buttonTitle" color="white"></Button>
         </div>
 
         <p class="text-center mt-4">Vuoi maggiori informazioni sul piano?</p>
@@ -45,8 +45,12 @@ export default {
         Button,
         
     },
-    props: ['title', 'euro', 'benefits', 'buttonTitle'],
+    props: ['title', 'euro', 'benefits', 'buttonTitle', 'color'],
     computed: {
+        color() {
+            const color = this.color
+            return 'background-color: ' + color + "!important"
+        },
         euroSplit() {
             const euros = this.euro.toString().split(',')
             return euros
@@ -54,10 +58,12 @@ export default {
     },
     data() {
         return {
+            colorOninit: '',
             formattedEuroValue: ''
         }
     },
     created() {
+        this.colorOninit = this.color
         this.formattedEuroValue = this.euroSplit
     }
 }
@@ -70,6 +76,7 @@ export default {
     padding: 2.5rem 3rem;
     border-radius: 20px;
     position:relative;
+    height: fit-content;
 }
 .price-container::before{
 content:"";
