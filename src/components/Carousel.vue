@@ -21,7 +21,7 @@
               </div>
             </div>
             <div class="carousel-img">
-              <img class="car-img" :src="slide.image" :alt="slide.title">
+              <img class="car-img img-fluid" :src="slide.image" :alt="slide.title">
             </div>
             <div class="w-100 moreExt">
                 <p class="text-white more"> <svg class="more-arrow fwhite" xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +225,7 @@
     object-fit: scale-down; 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 790px) {
 
     .car-head-text{
         min-height: 90px;
@@ -267,46 +267,10 @@
 }
 
 
-@media (min-width: 651px) and (max-width: 991px) {
-
-
+@media (min-width: 651px) and (max-width: 1480px) {
   
-  .car-head-text{
-        min-height: 90px;
-    }
-
-    .ccarousel {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .carousel-text,
-    .carousel-img {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .moreExt {
-        display: flex;
-    }
-
-    .car-img {
-        width: 300px; 
-        height: 300px; 
-        object-fit: scale-down; 
-    }
-
-    .carousel-text>div>p {
-        display: none;
-    }
-
-    .slider{
-        max-width: 430px;
-    }
-
-    .more{
-        justify-content: center;
-    }
+c.container{
+  max-width: 100%;
+}
 }
 </style>
