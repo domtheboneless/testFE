@@ -55,10 +55,6 @@ export default {
     border-radius: 10px;
 }
 
-button span {
-padding-bottom: 3px;
-}
-
 .c-icon {
     margin-left: 7px;
     margin-right: 7px;
