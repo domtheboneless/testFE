@@ -82,7 +82,6 @@
       scrollToSlide(index) {
         const slider = this.$refs.slider;
         const slideWidth = slider.offsetWidth;
-        console.log(slideWidth * index)
         slider.scrollTo(
         {
           left: slideWidth * index,
