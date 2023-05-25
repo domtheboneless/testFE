@@ -40,7 +40,6 @@
             v-for="(slide, index) in slides"
             :key="index"
             class="nav-dot"
-            :class="{ active: currentIndex === index }"
             @click="goToSlide(index)"
           >•</div>
         </div>
@@ -73,33 +72,26 @@
             image: '../img/Servizi_Img 1@2x.png'
           }
           
-        ],
-        currentIndex: 0
+        ]
       };
     },
     methods: {
       goToSlide(index) {
-        this.currentIndex = index;
         this.scrollToSlide(index);
       },
       scrollToSlide(index) {
         const slider = this.$refs.slider;
         const slideWidth = slider.offsetWidth;
-        slider.scrollTo({
+        console.log(slideWidth * index)
+        slider.scrollTo(
+        {
           left: slideWidth * index,
           behavior: 'smooth'
         });
-      },
-      showMore(index) {
-        // Implementa l'azione desiderata quando viene cliccato su "SCOPRI DI PIÙ"
-        console.log('Mostra di più per la slide', index);
       }
     }
   };
   </script>
-
-
-
 <style scoped>
 
 .nav-dot{
